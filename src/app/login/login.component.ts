@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-
+import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 
 @Component({
@@ -12,18 +12,22 @@ import {Component} from '@angular/core';
 
 
 export class loginComponent{
-	public titulo = 'login';
-	
-
-	save(){
+	myForm: FormGroup;
+	constructor( public fb: FormBuilder)
+	{
+		this.myForm = this.fb.group({
+			name: ['', [Validators.required]],
+			password: ['', [Validators.required]],
+		  });
+		
 
 	}
 
-	private pre($event){
-		$event.preventDefault();
-		console.log(`se detuvo`);
-    
-}
+	 ngOnInit() { }
+	 
+ saveData(){
+    console.log(this.myForm.value);
+  }
 		
 
 	}
