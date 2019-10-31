@@ -21,7 +21,7 @@ export class loginComponent{
 
 	private pre($event){
 		$event.preventDefault();
-		console.log("se detuvo");
+		console.log(`se detuvo`);
     
 }
 		
