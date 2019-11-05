@@ -89,20 +89,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/common-css/ionicons.css",
-              "src/assets/common-css/ionicons.css",
-              "src/assets/styles.css",
-              "src/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css",
-              "src/assets/fonts/iconic/css/material-design-iconic-font.min.css",
               "src/styles.css"
             ],
-            "scripts": ["src/assets/common-js/bootstrap.js",
-            "src/assets/common-js/isotope.pkgd.min.js",
-            "src/assets/jquery-2.1.4.min.js",
-            "src/assets/common-js/isotope.pkgd.min.js",
-            "src/assets/common-js/jquery.fluidbox.min.js",
-            "src/assets/common-js/scripts.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {

@@ -8,7 +8,6 @@ const appRoutes: Routes = [
 
 {path: '',component: homeComponent},
 {path: 'login',component: loginComponent},
-
 {path: '**',component: homeComponent}
 
 ]

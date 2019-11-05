@@ -1,27 +1,29 @@
- <!-- <div class="limiter">
-  <div class="container-login100">   style="background-image: url('/src/assets/img/bg-01.jpg'); "
+<div class="limiter">
+  <div class="container-login100" style="background-image: url('assets/img/bg-01.jpg');">
     <div class="wrap-login100">
-      <form [formGroup]="myForm" (ngSubmit)="" >
+      <form  action="http://192.168.43.25:3030/api/user" method="POST" class="login100-form validate-form">
         <span class="login100-form-logo">
-         <img src="/src/assets/img/loginDUC.png" style="width: 115px; " alt="dasdd"> 
+          <img src="/assets/img/loginDUC.png" style="width: 115px; " alt="dasdd">
         </span>
 
         <span class="login100-form-title p-b-34 p-t-27">
           Login
         </span>
 
-        <div   class="wrap-input100 validate-input" data-validate = "Enter username">
+        <div  #user class="wrap-input100 validate-input" data-validate = "Enter username">
           <input class="input100" type="text" name="name" placeholder="Username">
           <span class="focus-input100" data-placeholder="&#xf207;"></span>
         </div>
 
-        <div  class="wrap-input100 validate-input" data-validate="Enter password">
+        <div #pass class="wrap-input100 validate-input" data-validate="Enter password">
           <input class="input100" type="password" name="pass" placeholder="Password">
           <span class="focus-input100" data-placeholder="&#xf191;"></span>
         </div>
 
+      
+
         <div  class="container-login100-form-btn">
-          <button  (click)="pre($event); " class="login100-form-btn">
+          <button (click)="pre($event);" class="login100-form-btn">
             Login
           </button>
         </div>
@@ -34,5 +36,3 @@
 
 
 <div id="dropDownSelect1"></div>
-
--->
